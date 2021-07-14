@@ -1,10 +1,11 @@
 #include <iostream>
 
-#include "factorial.h"
+#include "myclass.h"
 
 int main(int argc, const char* argv[])
 {
-    std::cout << "Hello Factorial!!!" << std::endl;
-    std::cout << 4 << "!" << " = " << Factorial(4) << std::endl;
+    MyClass obj;
+    obj.set_value(5);
+    std::cout << "value set is " << obj.get_value() << std::endl;
     return 0;
 }
