@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.0)
+project(MyCppContainer)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_CXX_STANDARD 20)
+add_library(Factorial src/factorial.cpp)
+add_executable(MyApp src/main.cpp)
+target_link_libraries(MyApp Factorial)
